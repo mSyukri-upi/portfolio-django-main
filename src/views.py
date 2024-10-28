@@ -11,9 +11,6 @@ def about(request):
 def education(request):   
     return render(request, 'education.html')
 
-def projects(request):   
-    return render(request, 'projects.html')
-
 def experience(request):   
     return render(request, 'experience.html')
 
