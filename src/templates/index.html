@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Syukri {% block title %}{% endblock %}</title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'components/navbar.html' %}
+
+    <header>
+        <img src="{% static 'img/msyukri.PNG' %}" alt="Muhammad Syukri" class="center">
+        <h2>Muhammad Syukri <span id="typing-text"></span></h2>
+        <p class="center">
+            📌Bandung, Indonesia 📱+6285163164242 📩<a href="mailto:m.syukri@upi.edu">m.syukri@upi.edu</a>
+            💼<a href="https://www.linkedin.com/in/muhammad-syukri-yazid-muzakki/">linkedin</a> 💻<a
+                href="https://github.com/mSyukri-upi">github</a>
+        </p>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
